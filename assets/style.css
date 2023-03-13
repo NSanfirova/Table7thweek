@@ -1,0 +1,139 @@
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.header,
+.left,
+.right,
+.somemore {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nazv {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.main,
+.div {
+    display: flex;
+}
+
+.header {
+    background-color: #b2e9f3;
+}
+
+.left {
+    background-color: #0c7b8e;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.somemore {
+    align-self: center;
+    flex-grow: 1;
+}
+
+.right {
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #e10d11;
+}
+
+.main {
+    align-self: center;
+    flex-grow: 1;
+}
+
+.somemore {
+    background-color: #f78f4e;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.footer {
+    display: flex;
+    background-color: #d8d9dd;
+}
+
+.footer_f {
+    flex-grow: 1;
+    background: #b60d8b;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    .left {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        background-color: #d9efb7;
+    }
+
+    .div {
+        flex-flow: column;
+    }
+
+    .right {
+        display: flex;
+        width: 100%;
+        background-color: #5de651;
+        justify-content: center;
+    }
+
+    .somemore {
+        width: 100%;
+        background-color: #f4aae9;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .container {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .footer {
+        display: flex;
+        background-color: #213fb9;
+        flex-wrap: wrap;
+    }
+
+    .footer_f {
+        background-color: #ea4258;
+    }
+
+    .right {
+        background-color: #f8c948;
+    }
+
+    .somemore {
+        background-color: #87f30d;
+    }
+}
